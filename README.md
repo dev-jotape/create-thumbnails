@@ -28,6 +28,7 @@ If you are using macOS, reinstall the sharp lib to be compatible with Docker, by
 POST: http://localhost:4000/images
 
 formData: image
+
 Body:
 ```json
 {
