@@ -1,0 +1,41 @@
+{
+   "name": "impact-test",
+   "version": "1.0.0",
+   "main": "index.js",
+   "license": "MIT",
+   "scripts": {
+      "docs": "typedoc src/",
+      "build": "node --inspect=5858 -r ts-node/register ./src/index.ts",
+      "start": "nodemon",
+      "serve": "node dist/server.js",
+      "prettify": "prettier --write src/**/*.ts src/*.ts",
+      "test": "NODE_ENV=local jest --no-cache",
+      "migration:run": "NODE_ENV=local ts-node $(yarn bin typeorm) migration:run"
+   },
+   "dependencies": {
+      "@types/jest": "^26.0.23",
+      "express": "^4.17.1",
+      "jest": "^27.0.4",
+      "multer": "^1.4.2",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.10",
+      "sharp": "^0.28.3",
+      "ts-jest": "^27.0.3",
+      "typedi": "^0.8.0",
+      "typeorm": "0.2.34"
+   },
+   "devDependencies": {
+      "@types/express": "^4.17.12",
+      "@types/multer": "^1.4.6",
+      "@types/node": "^8.0.29",
+      "@types/sharp": "^0.28.3",
+      "nodemon": "^1.19.1",
+      "prettier": "^1.18.2",
+      "ts-node": "3.3.0",
+      "tslint": "^5.18.0",
+      "tslint-config-prettier": "^1.18.0",
+      "tslint-microsoft-contrib": "^6.2.0",
+      "typedoc": "^0.15.0",
+      "typescript": "3.3.3333"
+   }
+}
