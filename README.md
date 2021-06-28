@@ -29,14 +29,7 @@ The images will be saved in the "uploads" folder.
 
 POST: http://localhost:4000/images
 
-formData: image
-
-Body:
-```json
-{
-    "description": "image description"
-}
-```
+![POST example] (https://github.com/dev-jotape/create-thumbnails/blob/master/postman-example.png)
 
 Response: 
 ```json
