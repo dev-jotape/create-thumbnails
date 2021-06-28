@@ -25,6 +25,8 @@ If you are using macOS, reinstall the sharp lib to be compatible with Docker, by
 # Usage
 ## Upload Image
 
+The images will be saved in the "uploads" folder.
+
 POST: http://localhost:4000/images
 
 formData: image
